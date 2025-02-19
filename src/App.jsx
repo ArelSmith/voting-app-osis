@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Tilt } from "@jdion/tilt-react";
+import Typed from "typed.js";
 import paslon1 from "./assets/paslon-1.png";
 import paslon2 from "./assets/paslon-2.png";
 import paslon3 from "./assets/paslon-3.png";
@@ -14,6 +15,8 @@ function App() {
   const [angka3, setAngka3] = useState(() => {
     return JSON.parse(localStorage.getItem("angka3")) || 0;
   });
+
+  const typedText = useRef(null);
 
   useEffect(() => {
     localStorage.setItem("angka1", JSON.stringify(angka1));
@@ -54,11 +57,23 @@ function App() {
     setAngka3(0);
   };
 
+  useEffect(() => {
+    const typed = new Typed(typedText.current, {
+      strings: [`Pemilihan Ketua dan Wakil Ketua Osis`],
+      typeSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div className="h-screen flex flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-center font-[Clash_Display]">
-          Pemilihan Ketua dan Wakil Ketua Osis
+          <span ref={typedText}></span>
         </h1>
 
         <div className="flex flex-row gap-x-5 mt-5 justify-center">
