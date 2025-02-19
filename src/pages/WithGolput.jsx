@@ -98,7 +98,7 @@ function WithGolput() {
               >
                 <img src={paslon1} alt="1" width={300} />
               </button>
-              <h1 className="text-2xl">{angka1}</h1>
+              <h1 className="text-4xl">{angka1}</h1>
             </div>
           </Tilt>
           <Tilt>
@@ -110,7 +110,7 @@ function WithGolput() {
               >
                 <img src={paslon2} alt="2" width={300} />
               </button>
-              <h1 className="text-2xl">{angka2}</h1>
+              <h1 className="text-4xl">{angka2}</h1>
             </div>
           </Tilt>
           <Tilt>
@@ -122,19 +122,19 @@ function WithGolput() {
               >
                 <img src={paslon3} alt="3" width={300} />
               </button>
-              <h1 className="text-2xl">{angka3}</h1>
+              <h1 className="text-4xl">{angka3}</h1>
             </div>
           </Tilt>
           <Tilt>
             <div className="flex flex-col items-center">
-              <h1 className="text-4xl">?</h1>
+              <h1 className="text-4xl">Golput</h1>
               <button
                 onClick={handleSetAngka4}
                 className="hover:cursor-pointer"
               >
                 <img src={paslonNone} alt="None" width={300} />
               </button>
-              <h1 className="text-2xl">{angka4}</h1>
+              <h1 className="text-4xl">{angka4}</h1>
             </div>
           </Tilt>
         </div>
@@ -145,6 +145,9 @@ function WithGolput() {
         >
           Reset Count
         </button>
+        <h1 className="absolute bottom-0">
+          Made with &#10084;&#65039; by Arel Smith
+        </h1>
       </div>
     </>
   );

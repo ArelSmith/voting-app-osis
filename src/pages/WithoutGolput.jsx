@@ -76,7 +76,7 @@ function WithoutGolput() {
           <span ref={typedText}></span>
         </h1>
 
-        <div className="flex flex-row gap-x-10 mt-5 justify-center">
+        <div className="flex  flex-row  gap-x-10 mt-5 justify-center">
           <Tilt>
             <div className="flex flex-col items-center">
               <h1 className="text-4xl">Paslon 1</h1>
@@ -86,7 +86,7 @@ function WithoutGolput() {
               >
                 <img src={paslon1} alt="1" width={300} />
               </button>
-              <h1 className="text-2xl">{angka1}</h1>
+              <h1 className="text-4xl">{angka1}</h1>
             </div>
           </Tilt>
           <Tilt>
@@ -98,7 +98,7 @@ function WithoutGolput() {
               >
                 <img src={paslon2} alt="2" width={300} />
               </button>
-              <h1 className="text-2xl">{angka2}</h1>
+              <h1 className="text-4xl">{angka2}</h1>
             </div>
           </Tilt>
           <Tilt>
@@ -110,7 +110,7 @@ function WithoutGolput() {
               >
                 <img src={paslon3} alt="3" width={300} />
               </button>
-              <h1 className="text-2xl">{angka3}</h1>
+              <h1 className="text-4xl">{angka3}</h1>
             </div>
           </Tilt>
         </div>
@@ -121,6 +121,9 @@ function WithoutGolput() {
         >
           Reset Count
         </button>
+        <h1 className="absolute bottom-0">
+          Made with &#10084;&#65039; by Arel Smith
+        </h1>
       </div>
     </>
   );
