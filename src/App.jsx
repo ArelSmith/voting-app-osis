@@ -35,6 +35,19 @@ function App() {
     setAngka3((prev) => prev + 1);
   };
 
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === "1") handleSetAngka1();
+      if (e.key === "2") handleSetAngka2();
+      if (e.key === "3") handleSetAngka3();
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  });
+
   const handleReset = () => {
     setAngka1(0);
     setAngka2(0);
