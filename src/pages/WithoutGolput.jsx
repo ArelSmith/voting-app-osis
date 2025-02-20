@@ -43,6 +43,7 @@ function WithoutGolput() {
       if (e.key === "1") handleSetAngka1();
       if (e.key === "2") handleSetAngka2();
       if (e.key === "3") handleSetAngka3();
+      if (e.key === "5") handleReset();
     };
 
     window.addEventListener("keydown", handleKeyPress);
