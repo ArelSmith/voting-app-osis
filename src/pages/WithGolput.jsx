@@ -54,7 +54,7 @@ function WithGolput() {
       if (e.key === "2") handleSetAngka2();
       if (e.key === "3") handleSetAngka3();
       if (e.key === "4") handleSetAngka4();
-      if (e.key === "space") handleReset();
+      if (e.key === "5") handleReset();
     };
 
     window.addEventListener("keydown", handleKeyPress);
