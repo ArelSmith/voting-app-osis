@@ -7,6 +7,7 @@ Ini adalah project saya membuat voting app untuk menghitung suara pemilu OSIS SM
 - Card paslon interaktif menggunakan tilt.js
 - Terdapat shortcut agar memudahkan perhitungan (1,2,3 dan 5 untuk reset hitungan)
 - Penggunaan localStorage untuk penyimpanan variabel
+- /alternative untuk halaman dengan perhitungan golput
 
 ## 🛠️ Built With
 
@@ -26,6 +27,6 @@ npm run dev
 ```
 
 ## 📞 Contact
-Fell free to reach out!
+Feel free to reach out!
 - Instagram: @arelsmith6
 - Gmail: arelarel576@gmail.com
